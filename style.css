@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+}
+
+
+nav {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEEEE;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+#links {
+    display: flex;
+    width: 495px;
+    height: 50px;
+    align-items: center;
+    margin: 22px 45px;
+}
+
+#links li {
+    display: flex;
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 45px 0 38px;
+}
+
+#links li a {
+    display: flex;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 1.68rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+
+form {
+    display: flex;
+}
+
+form input {
+    width: 257px;
+    height: 27.37px;
+    border: none;
+    color: #8C8C8C;
+    background-color: #EEEEEE;
+    font-size: 0.87rem;
+    font-family: 'Poppins';
+    border-bottom: 1px solid #000000;
+    outline: none;
+}
+
+#pesquisa {
+    border: none;
+    cursor: pointer;
+}
+
+#carrinho {
+    margin-left: 46px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+
+
+    #links li {
+        margin: auto;
+        width: auto;
+        padding: 5px;
+    }
+
+    form input {
+        width: 157px;
+        margin: 0 0px;
+    }
+
+    #carrinho {
+        margin: 0 20px
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    form input {
+        display: none;
+    }
+
+    #pesquisa {
+        display: none;
+    }
+
+    #carrinho {
+        display: none;
+    }
+
+    #links {
+        margin: 22px auto;
+    }
+
+    #links li a {
+        font-size: 1rem;
+    }
+
+    #logo {
+        margin-left: auto;
+        max-width: 30%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    #links li a {
+        font-size: 0.8rem;
+    }
+
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1111px;
+    height: 500px;
+    margin: 26px auto;
+}
+
+@media (max-width: 1100px) {
+    section {
+        grid-template-columns: 1fr 1fr;
+        margin: 26px auto 0 36px;
+    }
+
+    #bloco2 {
+        display: none;
+    }
+}
+
+@media (max-width: 735px) {
+
+    section {
+        grid-template-columns: 1fr;
+        margin: 26px
+    }
+
+    #bloco3 {
+        display: none
+    }
+
+    #bloco1 {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        margin: 0 auto
+    }
+
+}
+
+@media (max-width: 450px) {
+    #bloco1 {
+        display: flex;
+        align-items: center;
+        max-width: 250px;
+        margin: 0 auto
+    }
+
+}
+
+
+
+.imgesp {
+    margin-bottom: 24px;
+}
+
+.imgcentral {
+    margin: 0 30px;
+}
+
+
+#txt {
+    font-family: 'Open Sans', sans-serif;
+    margin: 49px 37px 37px 48px;
+    text-align: center;
+    font-size: 0.87rem;
+}
+
+main {
+    margin: 0 auto;
+    padding: 0 129px 0 auto;
+    height: 525px;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 2.5rem;
+    color: #2E3840;
+    line-height: 2.81rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.carrosel {
+    max-width: 998px;
+    height: 410px;
+    display: flex;
+    margin: 0 20px;
+    align-items: flex-end;
+}
+
+
+figcaption {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 0.87rem;
+    width: 212.55px;
+    line-height: 200%;
+    cursor: pointer;
+}
+
+#setad{
+    cursor: pointer;
+}
+
+#setae{
+    cursor: pointer;
+}
+
+.preco-anterior {
+    color: #2E3840;
+    font-size: 0.87rem;
+    text-decoration: line-through;
+    padding-right: 13px;
+
+}
+
+.preco-atual {
+    color: red;
+    font-size: 0.87rem;
+}
+
+.parcelamento {
+    font-weight: 400;
+    color: #2E3840;
+    font-size: 0.75rem;
+}
+
+
+@media (max-width: 1100px) {
+
+    .carrosel {
+        max-width: 800px;
+    }
+ .container{
+     height: auto;
+ }
+}
+
+
+
+@media (max-width: 950px) {
+
+    .carrosel {
+        max-width: 600px;
+        padding: auto;
+    }
+ .container{
+     height: auto;
+ }
+    
+
+}
+
+@media (max-width: 735px) {
+    .carrosel{
+    max-width: 250px;
+    margin:  center;
+    
+}
+
+.container {
+    height: 240px;
+}
+}

@@ -17,14 +17,14 @@ $('.carrosel').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 950,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 735,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
